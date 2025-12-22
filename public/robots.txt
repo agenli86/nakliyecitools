@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nakliyeciaraclari.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 10
+
+# Disallow admin areas if any
+Disallow: /api/
