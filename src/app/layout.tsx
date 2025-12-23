@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "Nakliyeci Araçları - Sözleşme, Teklif ve Makbuz Oluşturucu",
   description: "Nakliyeciler için profesyonel sözleşme, teklif mektubu ve makbuz oluşturma araçları. Ücretsiz kullanım.",
   keywords: "nakliye sözleşmesi, taşıma sözleşmesi, nakliye teklifi, nakliye makbuzu, evden eve nakliyat",
+  // Bahsettiğin Meta Etiketi Buraya Ekledik:
+  other: {
+    "google-adsense-account": "ca-pub-9395277314770577",
+  },
 };
 
 export default function RootLayout({
@@ -16,12 +20,13 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <head>
+        {/* Reklam Gösterimi İçin Gerekli Script */}
         <Script
-          id="adsense-init"
+          id="adsbygoogle-js"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9395277314770577"
           crossOrigin="anonymous"
-          strategy="beforeInteractive" 
+          strategy="afterInteractive"
         />
       </head>
       <body className="antialiased">
